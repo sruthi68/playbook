@@ -1,0 +1,13 @@
+---
+- hosts: localhost
+  tasks:
+    - name: "create file"
+      file:
+        path: "/{{ ansible_hostname }}"
+        state: touch
+		
+    - name: "Create directory"
+	    file:
+	      path: "/{{ ansible_hostname }}"
+		    state: directory
+  
