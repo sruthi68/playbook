@@ -1,12 +1,7 @@
 ---
 - hosts: localhost
   tasks:
-    - name: "Create directory"
-      file:
-        path: "/{{ ansible_user_dir }}/deploy"
-        state: directory
-    - name: "create file"
-      file:
-        path: "/{{ ansible_user_dir }}/deploy"
-        state: touch
+    - debug:
+        msg: "Hello World"
+     
   
