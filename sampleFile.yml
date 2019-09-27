@@ -1,12 +1,5 @@
 ---
-- hosts: "{{ group_host }}"
+- hosts: "{{group_host}}"
   tasks:
-  
-    - name: Get path for home user
-      shell: echo $HOME
-      register : home_path
-    - name: Print
-      debug:
-        msg: "{{ home_path.stdout }}"
-     
-  
+    - debug:
+        msg: "Hello World"
