@@ -1,5 +1,5 @@
 ---
-- hosts: "{{ group_host }}"
+- hosts: "{{group_host}}"
   tasks:
     - debug:
         msg: "Hello World"
