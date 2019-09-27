@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: group_host
   tasks:
     - debug:
         msg: "Hello World"
